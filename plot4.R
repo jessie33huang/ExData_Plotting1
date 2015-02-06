@@ -11,13 +11,13 @@ obs$Date[obs$Date == "2/2/2007"] <- "02/02/2007"
 png(file="plot4.png")
 par(mfrow=c(2,2))
 #1
-plot(t,obs$Global_active_power, type="n", ylab="Global Active Power(kilowatts)") 
+plot(t,obs$Global_active_power, type="n", xlab="", ylab="Global Active Power(kilowatts)") 
 lines(t,obs$Global_active_power, type="l")
 #2
 plot(t,obs$Voltage, type="n", xlab="datetime",ylab="Voltage") 
 lines(t,obs$Voltage, type="l")
 #3
-plot(t,obs$Sub_metering_1, type="n", ylab="Energy sub metering") 
+plot(t,obs$Sub_metering_1, type="n", xlab="", ylab="Energy sub metering") 
 lines(t,obs$Sub_metering_1, type="l",col="black")
 lines(t,obs$Sub_metering_2, type="l",col="red")
 lines(t,obs$Sub_metering_3, type="l",col="blue")
